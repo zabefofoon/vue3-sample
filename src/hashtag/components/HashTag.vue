@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { useHashTagStore } from '@/hashtag/store/hashtag.store'
+import { useHashTagStore } from '@/hashtag/store/hashTag.store'
 import ProductVue from '@/product/components/Product.vue'
 import { Product } from '@/product/domain/Product'
 import { useProductStore } from '@/product/store/product.store'

@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div style="border: 1px solid #ccc">
     - {{ product.productName }}
+    - {{ product.dimmedMessage }}
   </div>
 </template>
 
