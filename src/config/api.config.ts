@@ -24,6 +24,7 @@ multipartClient.interceptors.response.use(
       return res
     },
     (res) => {
+      
       alert(res)
       return res
     }

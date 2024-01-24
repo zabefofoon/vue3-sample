@@ -19,7 +19,7 @@ import { useHashTagStore } from '@/hashtag/store/hashTag.store'
 import ProductVue from '@/product/components/Product.vue'
 import { Product } from '@/product/domain/Product'
 import { useProductStore } from '@/product/store/product.store'
-import { onBeforeMount, ref } from 'vue'
+import { onBeforeMount, ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import type { HashTag } from '../domain/HashTag'
 
@@ -41,6 +41,7 @@ const loadProducts = async () => {
 }
 
 onBeforeMount(() => {
+  console.log('HashTag onBeforeMount')
   loadHashTag(Number(route.params.id))
 })
 </script>
